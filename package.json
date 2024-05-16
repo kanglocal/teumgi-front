@@ -8,17 +8,42 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint",
+      "prettier --list-different"
+    ],
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "dependencies": {
+    "@tanstack/react-query": "^5.36.2",
+    "@tanstack/react-query-devtools": "^5.36.2",
+    "@vanilla-extract/css": "^1.15.1",
+    "@vanilla-extract/dynamic": "^2.1.0",
+    "@vanilla-extract/integration": "^7.1.4",
+    "@vanilla-extract/next-plugin": "^2.4.0",
+    "axios": "^1.6.8",
+    "next": "14.2.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-pwa": "^5.6.0",
     "react": "^18",
+    "react-cookie": "^7.1.4",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-hook-form": "^7.51.4",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/js": "^9.2.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.2.0",
+    "prettier": "3.2.5",
+    "typescript": "^5",
+    "typescript-eslint": "^7.9.0"
   }
 }
