@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div id="rootContainer">
       홈<div>ss</div>
     </div>
   );
